@@ -13,6 +13,7 @@ p{
 }
 
 div.name{
+    padding-right: 13px;
     left: 20%;
     right: 20%;
     display: flex;
