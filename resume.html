@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    <title>Resume Page</title>
+  </head>
+  <body>
+    <header>
+        <div class="nav_bar">
+          <div class="nav_links">
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
+
+        <div class="nav_bar_left">
+          <div class="nav_links_left">
+            <a href="https://github.com/Abdyel" target="_blank" rel="noopener noreferrer">Github</a>
+          </div>
+        </div>
+
+
+        <div class="nav_bar">
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <div id="Sidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#8656;</a>
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="https://github.com/Abdyel" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+          <script type="text/javascript">
+            /* Set the width of the sidebar to 150px (show it) */
+            function openNav() {document.getElementById("Sidepanel").style.width = "200px";}
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {document.getElementById("Sidepanel").style.width = "0";}
+          </script>
+      <hr>
+    </header>
+  </body>
+</html>

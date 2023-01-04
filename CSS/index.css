@@ -4,6 +4,7 @@ body{
 }
 
 div.nav_bar{
+    padding-top: 5px;
     left: 0%;
     right: 0%;
     height: 0px;
@@ -13,6 +14,7 @@ div.nav_bar{
 
 
 div.nav_links{
+    padding-top: 5px;
     left: 0%;
     right: 0%;
     background-color: #111 ;
@@ -46,6 +48,7 @@ div.nav_bar_left{
 
 
 div.nav_links_left{
+    padding-top: 5px;
     left: 0%;
     right: 0%;
     background-color: #111 ;
@@ -70,8 +73,8 @@ div.nav_links_left a:hover{
 }
 
 
-
 div.logo{
+    top: 30px;
     left: 0%;
     right: 0%;
     text-align: center;
@@ -92,10 +95,18 @@ div.logo a img{
 @media screen and (max-width: 600px) {
   div.nav_links {
     display: none;
-  }
+    }
   div.nav_links_left {
     display: none;
-  }
+    }
+  div.logo {
+    top: 30px;
+    left: 0%;
+    right: 0%;
+    text-align: right;
+    padding: 5px;
+    padding-right: 15px;
+    }
 }
 
 /*  */
@@ -107,7 +118,7 @@ div.logo a img{
 }
 
 .sidepanel {
-  height: 250px; /* Specify a height */
+  height: 100%; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -149,6 +160,6 @@ div.logo a img{
   cursor: pointer;
   background-color: #191716;
   color: white;
-  padding: 10px 15px;
+  padding: 15px 15px;
   border: none;
 }
