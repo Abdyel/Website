@@ -1,89 +1,154 @@
 body{
     margin: 0px;
+    background-color: #191716;
 }
 
-ul {
-  position: sticky;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-ul .right {
-  float:right;
-  position: sticky;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+div.nav_bar{
+    left: 0%;
+    right: 0%;
+    height: 0px;
+    display: flex;
+    justify-content: start-container;
 }
 
-li {
-  float: left;
+
+div.nav_links{
+    left: 0%;
+    right: 0%;
+    background-color: #111 ;
+    display: flex;
+    height: 60px;
+    padding-bottom: 10px;
 }
 
-li .right {
-    float: right;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-
-h1 {
-    margin: 8px;
+div.nav_links a{
+    color: #818181;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+    margin: 5px;
     text-align: center;
-    max-width: 99%;
-    margin-bottom: 2px;
+    line-height: 60px;
+    font-size: 24px;
 }
 
-img.header {
-    width: 400px;
-    height: 80px;
-    object-fit: fill;
-    border-radius: 50px;
+div.nav_links a:hover{
+    background-color: #f1f1f1;
 }
 
-div.container {
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20px;
-    margin: 20px;
-    background-color: #e6e6e6;
+div.nav_bar_left{
+    left: 0%;
+    right: 0%;
+    height: 0px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.custom-select {
-  float: left;
-  position: relative;
-  font-family: Verdana, sans-serif;
+
+div.nav_links_left{
+    left: 0%;
+    right: 0%;
+    background-color: #111 ;
+    display: flex;
+    height: 60px;
+    padding-bottom: 10px;
 }
 
-.submit {
-    float:right;
-    text-align: right;
+div.nav_links_left a{
+    color: #818181;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
 }
 
-.login {
-    float:right;
-    text-align: right;
-    padding-right: 20px;
-    padding-bottom: 8px;
+div.nav_links_left a:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+div.logo{
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    padding: 5px;
+}
+
+div.logo a img{
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (min-width: 600px) {
+  .openbtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.nav_links {
+    display: none;
+  }
+  div.nav_links_left {
+    display: none;
+  }
+}
+
+/*  */
+
+/* The sidepanel menu */
+
+#active{
+    text-decoration: underline;
+}
+
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 5px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #191716;
+  color: white;
+  padding: 10px 15px;
+  border: none;
 }

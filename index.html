@@ -7,12 +7,39 @@
     <title>Homepage</title>
   </head>
   <body>
-    <h1>
-        <img class="header" src="images/Header.jpg" alt="" />
-    </h1>
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li class="right"><a href="loginPage.html">Login</a></li>
-    </ul>
+    <div class="nav_bar">
+      <div class="nav_links">
+        <a href="">Home</a>
+      </div>
+    </div>
+
+    <div class="nav_bar_left">
+      <div class="nav_links_left">
+        <a href="">Github</a>
+      </div>
+    </div>
+
+
+    <div class="nav_bar">
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#8656;</a>
+      <a id="active" href="#">Home</a>
+      <a href="#">Github</a>
+    </div>
+
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png"></a>
+    </div>
+
   </body>
+  <script type="text/javascript">
+    /* Set the width of the sidebar to 150px (show it) */
+    function openNav() {document.getElementById("mySidepanel").style.width = "150px";}
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {  document.getElementById("mySidepanel").style.width = "0";}
+  </script>
 </html>
