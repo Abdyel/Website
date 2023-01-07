@@ -260,11 +260,28 @@ div.p1 p{
     text-overflow: wrap;
 }
 
-h1{
+div.p1 hr {
+    border: 1px solid black;
+}
 
+p.h1{
+    line-height: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: 500;
+    font-size: 30px;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+
+.email{
+    line-height: 20px;
+    font-size: 15px;
 }
 
 #p1{
-    color: #191716;
+    text-align: left;
+    font-family: Andale Mono, monospace;
+    color: #F1F1F1;
     margin: 20px;
 }
