@@ -4,10 +4,16 @@ body{
 }
 
 header{
+    left: 0%;
+    right: 0%;
     animation-name: fadein;
     animation-duration: 2s;
     background-color: #191716;
-    position: sticky;
+    position: fixed;
+}
+
+.spacer{
+    height: 85px;
 }
 
 p{
@@ -18,6 +24,7 @@ div.name{
     animation-name: fadein;
     animation-duration: 3.5s;
     padding-right: 13px;
+    top: 20px;
     left: 20%;
     right: 20%;
     display: flex;
@@ -28,10 +35,11 @@ div.name{
 
 div.name p{
     font-family: Copperplate, Papyrus, fantasy;
-    font-size: 25px;
-    letter-spacing: .1rem;
+    font-size: 5vw;
+    letter-spacing: .4vw;
     word-spacing: 5px;
-    line-height: 35px;
+    text-align: center;
+    line-height: 20px;
 }
 
 
