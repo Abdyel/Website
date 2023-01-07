@@ -260,9 +260,6 @@ div.p1 p{
     text-overflow: wrap;
 }
 
-div.p1 hr {
-    border: 1px solid black;
-}
 
 p.h1{
     line-height: 20px;
@@ -284,4 +281,9 @@ p.h1{
     font-family: Andale Mono, monospace;
     color: #F1F1F1;
     margin: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #191716;
 }
