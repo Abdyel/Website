@@ -14,6 +14,8 @@ p{
 }
 
 div.name{
+    animation-name: fadein;
+    animation-duration: 3.5s;
     padding-right: 13px;
     left: 20%;
     right: 20%;
