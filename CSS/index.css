@@ -4,6 +4,8 @@ body{
 }
 
 header{
+    animation-name: fadein;
+    animation-duration: 2s;
     background-color: #191716
 }
 
@@ -29,13 +31,17 @@ div.name p{
     line-height: 35px;
 }
 
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 div.nav_bar{
     padding-top: 5px;
     left: 0%;
     right: 0%;
     height: 0px;
     display: flex;
-    justify-content: start-container;
 }
 
 
@@ -50,7 +56,11 @@ div.nav_links{
 }
 
 div.nav_links a{
-    color: #818181;
+
+    animation-name: fadein;
+    animation-duration: 3s;
+
+    color: #999999;
     text-decoration: none;
     height: 60px;
     width: 100px;
@@ -84,7 +94,11 @@ div.nav_links_left{
 }
 
 div.nav_links_left a{
-    color: #818181;
+
+    animation-name: fadein;
+    animation-duration: 3s;
+
+    color: #999999;
     text-decoration: none;
     height: 60px;
     width: 100px;
@@ -145,7 +159,12 @@ div.logo a img{
         justify-content: center;
     }
     div.intro{
+        flex-wrap: wrap;
         justify-content: center;
+    }
+    div.p1{
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -205,12 +224,13 @@ div.logo a img{
 /*Style the first picture of me on the webpage */
 
 div.intro{
-    padding-top: 3px;
+    background-color: grey;
+    padding: 10px;
     margin-top: 5px;
     margin: 8px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    border-radius: 10px;
 } 
 
 div.intro img {
@@ -222,7 +242,17 @@ div.intro img {
 
 
 div.p1 {
-    width: 50%;
+    margin-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+}
+div.p1 p{
+    text-align: center;
+    text-overflow: wrap;
+}
+
+h1{
+
 }
 
 #p1{
