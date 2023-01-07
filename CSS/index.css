@@ -6,7 +6,8 @@ body{
 header{
     animation-name: fadein;
     animation-duration: 2s;
-    background-color: #191716
+    background-color: #191716;
+    position: sticky;
 }
 
 p{
@@ -33,10 +34,6 @@ div.name p{
     line-height: 35px;
 }
 
-@keyframes fadein {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 div.nav_bar{
     padding-top: 5px;
@@ -222,10 +219,18 @@ div.logo a img{
   border: none;
 }
 
+/* Animations Utilities */
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 /*Style the first picture of me on the webpage */
 
 div.intro{
+    overflow:hidden;
+    position: bottom;
     animation-name: fadein;
     animation-duration: 3s;
     background-color: grey;
