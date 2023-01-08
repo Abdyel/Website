@@ -292,7 +292,7 @@ p.h1{
 }
 
 .p2{
-    line-height: 1em;
+    line-height: 1.1em;
     font-size: max(1em,2.4vw);
     text-align: left;
     font-family: 'Libre Baskerville', serif;
