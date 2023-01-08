@@ -144,6 +144,14 @@ div.logo a img{
         width: 50%;
         justify-content: center;
     }
+    p.h1{
+        line-height: 2vw;
+        font-size: 5.5vw;
+    }
+    .email{
+        line-height: 1vw;
+        font-size: 4vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -251,10 +259,10 @@ div.intro{
 } 
 
 div.intro img {
-    max-height: 450px;
+    max-height:450px;
     border-radius: 10px;
     object-fit: contain;
-    object-position: top;
+    object-position: center;
 }
 
 
@@ -263,32 +271,33 @@ div.p1 {
     border-style: solid;
     border-radius: 10px;
 }
-div.p1 p{
-    text-align: center;
-    text-overflow: wrap;
-}
 
 
 p.h1{
-    line-height: 20px;
-    font-family: Andale Mono, monospace;
-    font-weight: 500;
-    font-size: 30px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 7%;
+    line-height: .6em;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
     color: #F1F1F1;
     text-align: center;
 }
 
 
 .email{
-    line-height: 20px;
-    font-size: 15px;
+    line-height: .5em;
+    font-size: .4em;
 }
 
-#p1{
+.p2{
+    line-height: 1em;
+    font-size: max(1em,2.4vw);
     text-align: left;
-    font-family: Andale Mono, monospace;
+    font-family: 'Libre Baskerville', serif;
     color: #F1F1F1;
-    margin: 20px;
+    margin: 15px;
 }
 
 h1{
