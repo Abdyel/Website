@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Slab:wght@800&family=Tilt+Warp&display=swap');
+html{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: aqua;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Tilt Warp', cursive;
+}
+
+/* N A V I G A T I O N   B A R */
+
+nav{
+    animation-name: fadein;
+    animation-duration: .6s;
+    padding-bottom: 70px;
+}
+
+
+.navBar {
+    animation-name: fallDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    overflow: hidden;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(142, 155, 49);
+
+}
+
+.navBar ul{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    background-color: azure;
+}
+
+.navBar li{
+    display: flex;
+    background-color: brown;
+}
+
+.navBar li a{
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(192, 192, 241)
+}
+
+.navBar li a:hover{
+    background-color: antiquewhite;
+}
+
+.name{
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}
+
+#logo{
+    text-align: center;
+    width: 60px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #19171600;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+  }
+/* S I D E  P A N E L*/
+/*Overlay for top ov body outside of sidepanel*/
+#overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(85, 82, 82, 0.673);
+    animation-name: fadein;
+    animation-duration: 0.5s;
+}
+/*Overlay for closing the side panel*/
+#overlay2{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.626);
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+
+.sidePanel{
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: coral;
+    transition: 0.6s;
+}
+
+.sidePanel ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: darkblue;
+}
+
+.closebtn{
+font-size: 33px;
+float: right;
+cursor: pointer;
+background-color: #19171600;
+color: white;
+padding: 15px 15px;
+border: none;
+}
+
+.sidePanel li{
+    background-color: chartreuse;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.sidePanel a{
+    display: block;
+    background-color: rgb(230, 0, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sidePanel li a:hover{
+    background-color: antiquewhite;
+}
+
+/* I N T R O    P A R A G R A P H */
+.intro{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(232, 136, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: fadein;
+    animation-duration: .3s;
+}
+
+#picNoah{
+    min-width: 50vw;
+    min-height: 44vh;
+
+    background-image: url('../Images/44043.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.pHeader{
+    padding: 0%;
+    margin: 0%;
+    background-color: brown;
+    font-family: 'Tilt Warp', cursive;
+    grid-area: 'main';
+}
+.pHeader p{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    font-size: max(5vw, 25px);
+}
+
+.pIntro{
+    margin: 10px;
+    display: grid;
+    height: 400px;
+    align-content: space-evenly;
+    grid-template-columns: 'header' 'main';
+    background-color: #195b23;
+    row-gap: 0px;
+    padding: 0px;
+}
+
+.pBody{
+    grid-area: 'header';
+    font-family: 'Kanit', sans-serif;
+    margin: 0%;
+    line-height: max(2.5vw,21px);
+    font-size: max(2.5vw, 21px);
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+/* SCREEN SIZE SETTINGS */
+@media screen and (Max-width: 600px){
+    .nav_btn{
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+    .intro{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pIntro{
+        height:43vh;
+    }
+    #logo{
+        float: right;
+        margin: 5px;
+        margin-right: 15px;   
+    }
+    #phoneName{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        display: block;
+        margin: auto;
+    }
+    #picNoah{
+        width: 100%;
+        height: 30%;
+     }
+     .pBody{
+        line-height: max(4.0vw,12px);
+        font-size: max(4.0vw,12px);
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .openbtn{
+        display: none;
+    }
+    #phoneName{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
+
+/* A N I M A T I O N S */
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fallDown{
+    from {height: 0px;}
+    to {height:70px;}
+}
+
+.DEV {
+    font-size: 40px;
+    text-align: center;
+}
