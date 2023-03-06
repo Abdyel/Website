@@ -192,7 +192,7 @@ border: none;
     padding: 0%;
     margin: 0%;
     text-align: center;
-    font-size: max(5vw, 30px);
+    font-size: max(5vw, 25px);
 }
 
 .pIntro{
@@ -210,8 +210,8 @@ border: none;
     grid-area: 'header';
     font-family: 'Kanit', sans-serif;
     margin: 0%;
-    line-height: max(2.0vw,21px);
-    font-size: max(2.0vw, 21px);
+    line-height: max(2.5vw,21px);
+    font-size: max(2.5vw, 21px);
     text-align: center;
     background-color: aqua;
     padding: 20px;
@@ -249,9 +249,9 @@ border: none;
         height: 30%;
      }
      .pBody{
-        line-height: max(4.0vw,13px);
-        font-size: max(4.5vw,14px);
-        margin: 5px;
+        line-height: max(4.0vw,12px);
+        font-size: max(4.0vw,12px);
+        margin: 15px;
     }
 }
 

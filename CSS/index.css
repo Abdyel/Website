@@ -1,0 +1,320 @@
+body{
+    margin: 0px;
+    background-color: #FDFFFC;
+}
+
+header{
+    left: 0%;
+    right: 0%;
+    animation-name: fadein;
+    animation-duration: 2s;
+    background-color: #191716;
+    position: fixed;
+}
+
+.spacer{
+    height: 85px;
+}
+
+p{
+    color: #FDFFFC;
+}
+
+div.name{
+    animation-name: fadein;
+    animation-duration: 3.5s;
+    padding-right: 13px;
+    top: 20px;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+div.name p{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 5vw;
+    letter-spacing: .4vw;
+    word-spacing: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+div.nav_bar{
+    padding-top: 5px;
+    left: 0%;
+    right: 0%;
+    height: 0px;
+    display: flex;
+}
+
+
+div.nav_links{
+    padding-top: 5px;
+    left: 0%;
+    right: 0%;
+    background-color: #191716 ;
+    display: flex;
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+div.nav_links a{
+
+    animation-name: fadein;
+    animation-duration: 3s;
+
+    color: #999999;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+div.nav_links a:hover{
+    background-color: #f1f1f1;
+}
+
+div.nav_bar_left{
+    left: 0%;
+    right: 0%;
+    height: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+div.nav_links_left{
+    padding-top: 5px;
+    left: 0%;
+    right: 0%;
+    background-color: #191716 ;
+    display: flex;
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+div.nav_links_left a{
+
+    animation-name: fadein;
+    animation-duration: 3s;
+
+    color: #999999;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+div.nav_links_left a:hover{
+    background-color: #f1f1f1;
+}
+
+
+div.logo{
+    top: 30px;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    padding: 5px;
+}
+
+div.logo a img{
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (min-width: 600px) {
+    .openbtn {
+        display: none;
+    }
+    div.name{
+        display: none;
+    }
+    div.intro img{
+        width: 50%;
+        justify-content: center;
+    }
+    p.h1{
+        line-height: 2vw;
+        font-size: 5.5vw;
+    }
+    .email{
+        line-height: 1vw;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.nav_links {
+        display: none;
+    }
+    div.nav_links_left {
+        display: none;
+    }
+    div.logo {
+        top: 30px;
+        left: 0%;
+        right: 0%;
+        text-align: right;
+        padding: 5px;
+        padding-right: 15px;
+    }
+    div.intro img{
+        width: 98%;
+        justify-content: center;
+    }
+    div.intro{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.p1{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* The sidepanel menu */
+
+#active{
+    text-decoration: underline;
+}
+
+.sidepanel {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 5px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #191716;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+}
+
+/* Animations Utilities */
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+/*Style the first picture of me on the webpage */
+
+div.intro{
+    overflow:hidden;
+    position: bottom;
+    animation-name: fadein;
+    animation-duration: .9s;
+    background-color: grey;
+    padding: 10px;
+    margin-top: 5px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+} 
+
+div.intro img {
+    max-height:450px;
+    border-radius: 10px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+div.p1 {
+    margin-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+p.h1{
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    line-height: .6em;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+
+.email{
+    line-height: .5em;
+    font-size: .4em;
+}
+
+.p2{
+    line-height: 1.1em;
+    font-size: max(1em,2.4vw);
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #F1F1F1;
+    margin: 15px;
+}
+
+h1{
+    text-align: center;
+    color: #191716;
+}
+
+/*
+.parallax {
+ 
+  background-image: url("img_parallax.jpg");
+ 
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
