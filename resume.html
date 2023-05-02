@@ -37,15 +37,19 @@
             </div>
         </div>  
     </nav>
-    <div>
-        
-    </div>
 
     <p class="DEV">STILL IN DEVELOPMENT</p>
 
+    <div id = "pdf">
+        <iframe id="iframe" src="Files\Resume.pdf#toolbar=0" width="95vw" height="95vh">
+    </div>
+
+
+    <p class="DEV">STILL IN DEVELOPMENT</p>
 
 </body>
 <footer>
+    <div id ="content-wrap"></div>
     <div class="License">
         <p>Link-Icon by Raj Dev on freeicons.io</p>
     </div>
@@ -63,6 +67,8 @@
         </ul>
     </div>
     <script type="text/javascript">
+        var iframe = document.getElementById("iframe");
+        iframe.scrolling = "no";
         /* Set the width of the sidebar to show side bar */
         function openNav() 
         {

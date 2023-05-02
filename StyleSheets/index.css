@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Slab:wght@800&family=Tilt+Warp&display=swap');
 html{
+    color: #FBF7F4;
     scroll-behavior: smooth;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -11,18 +12,19 @@ html::-webkit-scrollbar {
 body {
     padding: 0%;
     margin: 0%;
-    background-color: aqua;
+    background-color: #2E5077;
     position: relative;
     min-height: 100vh;
 }
 
 li a{
-    color: black;
+    color: #FBF7F4;
     text-decoration: none;
     font-family: 'Tilt Warp', cursive;
 }
 
 /* N A V I G A T I O N   B A R */
+
 
 nav{
     animation-name: fadein;
@@ -41,7 +43,7 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgb(142, 155, 49);
+    background-color: #2E3532;
 
 }
 
@@ -61,11 +63,11 @@ nav{
 .navBar li a{
     text-align: center;
     padding: 25px;
-    background-color: rgb(192, 192, 241)
+    background-color: #2E3532
 }
 
 .navBar li a:hover{
-    background-color: antiquewhite;
+    background-color:#679289;
 }
 
 .name{
@@ -85,10 +87,20 @@ nav{
     font-size: 30px;
     cursor: pointer;
     background-color: #19171600;
-    color: white;
+    color: #FBF7F4;
     padding: 15px 15px;
     border: none;
   }
+
+
+  a img{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+}
+
 /* S I D E  P A N E L*/
 /*Overlay for top ov body outside of sidepanel*/
 #overlay{
@@ -122,7 +134,7 @@ nav{
     width: 0%;
     overflow-x: hidden;
     height: 100%;
-    background-color: coral;
+    background-color:#2E3532;
     transition: 0.6s;
 }
 
@@ -155,20 +167,22 @@ border: none;
 
 .sidePanel a{
     display: block;
-    background-color: rgb(230, 0, 255);
+    background-color: #2E3532;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .sidePanel li a:hover{
-    background-color: antiquewhite;
+    background-color:#679289;
 }
 
 /* I N T R O    P A R A G R A P H */
 .intro{
+    padding: 0%;
+    margin: 0%;
     width: 100%;
     height: 50%;
-    background-color: rgb(232, 136, 0);
+    background-color:#66615c;
     display: flex;
     flex-direction: row-reverse;
     animation-name: fadein;
@@ -186,26 +200,31 @@ border: none;
 }
 
 .pHeader{
-    padding: 0%;
+    padding: 10px;
     margin: 0%;
-    background-color: brown;
+    border-color: black;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    background-color:#679289;
     font-family: 'Tilt Warp', cursive;
     grid-area: 'main';
 }
 .pHeader p{
-    padding: 0%;
+    padding: 2%;
     margin: 0%;
     text-align: center;
-    font-size: max(4.0vw, 30px);
+    font-size: max(4.0vw, 28px);
+    letter-spacing: 2px;
 }
 
 .pIntro{
-    margin: 10px;
+    margin: 0px;
     display: grid;
     height: 400px;
     align-content: space-evenly;
     grid-template-columns: 'header' 'main';
-    background-color: #195b23;
+    background-color:#E06D06;
     row-gap: 0px;
     padding: 0px;
 }
@@ -213,12 +232,37 @@ border: none;
 .pBody{
     grid-area: 'header';
     font-family: 'Kanit', sans-serif;
+    text-shadow: -1px 0 black, 0 px black, 1px 0 black, 0 -1px black;
     margin: 0%;
-    line-height: max(2.0vw,21px);
+    line-height: max(2.1vw,22px);
     font-size: max(2.0vw, 21px);
     text-align: center;
-    background-color: aqua;
+    background-color: #E06D06;
     padding: 20px;
+}
+
+
+/*F O O T E R*/
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.License{
+    position: absolute;
+    padding: 0%;
+    margin: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.License p{
+    position: relative;
+    padding: 5px;
+    bottom: 0%;
+    margin: 0%;
+    background-color: #195b23;
+    text-align: center;
 }
 
 /* SCREEN SIZE SETTINGS */
@@ -283,40 +327,30 @@ border: none;
     to {height:70px;}
 }
 
-
-a img{
-    position: relative;
-    top: 3px;
-    left: 3px;
-    width: 15px;
-    height: 15px;
-}
-
 .DEV {
     font-size: 40px;
     text-align: center;
 }
 
-#content-wrap {
-    padding-bottom: 2.5rem;
-}
-
-.License{
-    position: absolute;
-    padding: 0%;
-    margin: 0%;
-    bottom: 0%;
-    width: 100%;
-    background-color: bisque;
-}
-
-.License p{
+#pdf{
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     padding: 5px;
-    bottom: 0%;
-    margin: 0%;
-    background-color: #195b23;
     text-align: center;
+    background-color: #2E3532;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10px;
 }
 
-
+#pdf iframe{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    background-color: #2E3532;
+    width: 80vw;
+    height: 85vh;
+}
