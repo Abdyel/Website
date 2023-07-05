@@ -37,10 +37,25 @@
             </div>
         </div>  
     </nav>
+    
+    <form class="container" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <p>
+      <label>
+        Email: <input type="text" name="name" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Message: <textarea name="message"></textarea>
+      </label>
+    </p>
+    
+    <div data-netlify-recaptcha="true"></div>
 
-    <div>
-        
-    </div>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 
     <p class="DEV">STILL IN DEVELOPMENT</p>
 
