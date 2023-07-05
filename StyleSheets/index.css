@@ -71,10 +71,12 @@ nav{
 }
 
 .name{
+    color: #FBF7F4;
     margin: auto;
     font-family: 'Roboto Slab', serif;
-    font-size: 22px;
-}
+    font-size: 26px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;}
 
 #logo{
     text-align: center;
@@ -99,6 +101,14 @@ nav{
     left: 3px;
     width: 15px;
     height: 15px;
+}
+
+.spacer{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    color: black;
+    background-color: black;
 }
 
 /* S I D E  P A N E L*/
@@ -200,6 +210,7 @@ border: none;
 }
 
 .pHeader{
+    color: black;
     padding: 10px;
     margin: 0%;
     border-color: black;
@@ -219,9 +230,9 @@ border: none;
 }
 
 .pIntro{
+    position: relative;
     margin: 0px;
     display: grid;
-    height: 400px;
     align-content: space-evenly;
     grid-template-columns: 'header' 'main';
     background-color:#E06D06;
@@ -266,7 +277,7 @@ border: none;
 }
 
 /* SCREEN SIZE SETTINGS */
-@media screen and (Max-width: 600px){
+@media screen and (Max-width: 695px){
     .nav_btn{
         display: none;
     }
@@ -297,13 +308,14 @@ border: none;
         height: 30%;
      }
      .pBody{
-        line-height: max(4.0vw,13px);
-        font-size: max(4.5vw,14px);
+        line-height: max(4.0vw,17px);
+        font-size: max(4.5vw,17px);
         margin: 5px;
+        padding: 10px;
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 695px){
     .openbtn{
         display: none;
     }
