@@ -343,6 +343,8 @@ border: none;
     text-align: center;
 }
 
+/* R E S U M E   P A G E */
+
 #pdf{
     overflow-x: hidden;
     overflow-y: hidden;
@@ -365,9 +367,35 @@ border: none;
     height: 85vh;
 }
 
-.container {
-    color: black;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+/* C O N T A C T    P A G E */
+
+.form-Container {
+    background-color: gold;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 30px;
+    background-color: red ;
+}
+
+#contact {
+    width: 60vw;
+    height: 20vh;
+}
+
+#message {
+    resize: vertical;
+}
+
+input[type=text], textarea{
+    width: 100%;
 }
